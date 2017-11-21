@@ -34,7 +34,7 @@ using (var service = new MsExchangeServices())
 }
 
 
-#### using the service to add permissions to folders
+### using the service to add permissions to folders
 ```
 using (var service = new MsExchangeServices() {Logger = _log })
 {
