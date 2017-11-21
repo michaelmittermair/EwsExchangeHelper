@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MasterCategoryList.Category">
+    <Position X="4.25" Y="0.5" Width="2.25" />
+    <AssociationLine Name="KeyboardShortcut" Type="MasterCategoryList.CategoryKeyboardShortcut" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="4.363" />
+        <Point X="5" Y="4.688" />
+        <Point X="3.25" Y="4.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACEAAACAAIAgAAAAAgBAQAQIIAAAAAAAIQgCAAAAA=</HashCode>
+      <FileName>Category.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Color" />
+      <Property Name="KeyboardShortcut" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MasterCategoryList.MasterCategoryList">
+    <Position X="1" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="_UserConfigurationItem" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAgAAAAAAAAAAAAAAAAgEAAAAAAQAAoAAAA=</HashCode>
+      <FileName>MasterCategoryList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Categories" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Enum Name="MasterCategoryList.CategoryColor">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAGAABAAECAAhAAQAEAQBAAgAAAAAIAHBAIADEAAAA=</HashCode>
+      <FileName>CategoryColor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MasterCategoryList.CategoryKeyboardShortcut">
+    <Position X="1" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>CategoryKeyboardShortcut.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
