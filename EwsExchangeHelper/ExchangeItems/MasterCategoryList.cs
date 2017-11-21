@@ -30,11 +30,7 @@ namespace EwsExchangeHelper.ExchangeItems
         public string DefaultCategoryText
         {
             get => DefaultCategory != null ? DefaultCategory.ToString() : string.Empty;
-            set
-            {
-                Guid result;
-                DefaultCategory = Guid.TryParse(value, out result) ? result : (Guid?)null;
-            }
+            set => DefaultCategory = Guid.TryParse(value, out var result) ? result : (Guid?)null;
         }
 
 

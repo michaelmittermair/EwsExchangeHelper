@@ -10,7 +10,7 @@ This repo offers you a package to connect to exchange web services. You can get 
 * Additional information and code examples used from https://code.msdn.microsoft.com/Exchange-2013-101-Code-3c38582c
 
 ## Example
-using the Service to get all tasks of an user
+### using the Service to get all tasks of an user
 
 ```
 using (var service = new MsExchangeServices())
@@ -31,5 +31,16 @@ using (var service = new MsExchangeServices())
 			//item.ParentFolderId;
 		}
 	}
+}
+
+
+#### using the service to add permissions to folders
+```
+using (var service = new MsExchangeServices() {Logger = _log })
+{
+	service.ImpersonateUser(ConnectingIdType.SmtpAddress, "max.mustermann@outlook.com");
+
+	EnableFolderPermissions(service.ExchangeService, "mina.mustermann@outlook.com", WellKnownFolderName.Root);
+	EnableFolderPermissions(service.ExchangeService, "mina.mustermann@outlook.com", WellKnownFolderName.Inbox);
 }
 ```

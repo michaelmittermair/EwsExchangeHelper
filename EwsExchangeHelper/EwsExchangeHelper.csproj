@@ -57,6 +57,7 @@
     <Compile Include="ExchangeItems\CategoryKeyboardShortcut.cs" />
     <Compile Include="ExchangeItems\MasterCategoryList.cs" />
     <Compile Include="MsExchangeServices.cs" />
+    <Compile Include="Permission.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
