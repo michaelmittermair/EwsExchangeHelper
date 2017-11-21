@@ -32,9 +32,11 @@ using (var service = new MsExchangeServices())
 		}
 	}
 }
-
+```
 
 ### using the service to add permissions to folders
+With this function, you can add permissions like Read-Permission on the Inbox
+
 ```
 using (var service = new MsExchangeServices() {Logger = _log })
 {
