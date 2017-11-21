@@ -12,6 +12,7 @@ This repo offers you a package to connect to exchange web services. You can get 
 ## Example
 using the Service to get all tasks of an user
 
+```
 using (var service = new MsExchangeServices())
 {
 	service.ImpersonateUser(ConnectingIdType.SmtpAddress, "max.mustermann@outlook.com");
@@ -31,3 +32,4 @@ using (var service = new MsExchangeServices())
 		}
 	}
 }
+```
